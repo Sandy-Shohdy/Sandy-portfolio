@@ -48,20 +48,35 @@ export const portfolioData: Portfolio = {
 
   projects: [
     {
-      name: "Fujairah Free Zone Authority",
-      description: "SharePoint 2019 Migration & ERP Integration",
-      technologies: ["SharePoint", "ERP Systems"]
-    
+      name: "Next-Stop",
+      description: "add new step for your travel plan",
+      technologies: ["React", "JavaScript", "API"],
+      githubLink: "https://github.com/Sandy-Shohdy/Next-Stop",
+      liveLink: "https://next-stop-ashy.vercel.app/",
+      thumbnail: "/src/assets/NextStop.jpeg"
     },
     {
-      name: "Fujairah Immigration Department",
-      description: "Digital Services & Integration",
-      technologies: ["SharePoint", "Integration"]
+      name: "Popcorn-Pulse",
+      description: "A movie discovery platform",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/Sandy-Shohdy/Popcorn-Pulse",
+      liveLink: "https://sandy-shohdy.github.io/Popcorn-Pulse/index.html",
+      thumbnail: "/src/assets/PopcornPulse.jpeg"
     },
     {
-      name: "Fujairah National Hotels",
-      description: "Digital Services & Integration",
-      technologies: ["SharePoint", "Integration"]
+      name: "Hej Fika",
+      description: "A cozy café website",
+      technologies: ["HTML", "CSS", "JavaScript","Figma"],
+      githubLink: "https://github.com/Sandy-Shohdy/Coffee-shops",
+      liveLink: "https://sandy-shohdy.github.io/Coffee-shop/index.html",
+    },
+
+    {
+      name: "Zoomzy",
+      description: "A photos Hub",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/Sandy-Shohdy/ZoomZy-1",
+      liveLink: "https://sandy-shohdy.github.io/ZoomZy-1/login.html",
     }
   ],
 

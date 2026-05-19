@@ -33,7 +33,9 @@ interface Project {
     name: string
     description: string
     technologies: string[]
-
+    githubLink?: string
+    liveLink?: string
+    thumbnail?: string
 }
 
 interface TechnicalSkill {

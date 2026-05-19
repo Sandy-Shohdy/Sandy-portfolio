@@ -7,7 +7,7 @@ interface HeroProps {
 
 export default function Hero({ person }: HeroProps) {
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <div className="hero-content">
            <div className="hero-avatar">
     {person.photo ? (
