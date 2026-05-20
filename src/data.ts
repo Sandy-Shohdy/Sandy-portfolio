@@ -5,7 +5,7 @@ export const portfolioData: Portfolio = {
     name: "Sandy Shohdy",
     title: "Frontend Developer",
     bio: "Hi! I am Sandy, a Frontend Developer based in Stockholm. I build web applications that are clean, accessible, and intuitive to use, with a strong focus on creating seamless user experiences.",
-    photo: "/src/assets/Sandy.jpeg"
+    photo: "/src/assets/Sandy1.jpeg"
   },
 
   projects: [
