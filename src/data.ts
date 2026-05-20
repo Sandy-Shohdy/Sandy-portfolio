@@ -4,7 +4,7 @@ export const portfolioData: Portfolio = {
   person: {
     name: "Sandy Shohdy",
     title: "Frontend Developer",
-    bio: "Hi! I am Sandy, a Frontend Developer based in Stockholm. I build web applications that are clean, accessible, and intuitive to use, with a strong focus on creating seamless user experiences.",
+    bio: "Hi! I'm Sandy, a Frontend Developer based in Stockholm with a passion for building clean, accessible, and intuitive web applications. With a background in Software Quality Engineering, I combine technical excellence with user-centered design thinking to create seamless digital experiences. I'm committed to writing maintainable code, ensuring accessibility for everyone, and delivering high-performance solutions that truly matter. When I'm not coding, you'll find me exploring Stockholm's creative scene, staying updated with design trends, or enjoying outdoor activities. Let's create something amazing together!",
     photo: "/src/assets/Sandy1.jpeg"
   },
 
@@ -60,25 +60,18 @@ export const portfolioData: Portfolio = {
   ],
 
   technicalSkills: [
-    {
-      category: "Languages",
-      skills: ["JavaScript", "TypeScript", "HTML", "CSS", "Storybook"]
-    },
+   
     {
       category: "Frontend",
-      skills: ["React", "Responsive Design", "UI/UX"]
+      skills: ["React","JavaScript", "TypeScript", "HTML5", "CSS","CSS Tailwind","Storybook", "UI/UX","Responsive Design"]
     },
     {
       category: "Backend",
-      skills: ["Node.js", "MongoDB", "SQL"]
+      skills: ["Node.js", "MongoDB", "SQL", "Express.js"]
     },
     {
       category: "Tools & Other",
-      skills: ["Git/GitHub", "Postman", "Figma", "Agile/Scrum"]
-    },
-    {
-      category: "AI",
-      skills: ["Claude", "ChatGPT", "Cursor", "Copilot"]
+      skills: ["Git/GitHub", "Postman", "Figma","Vite","Claude", "ChatGPT", "Cursor", "Copilot"]
     }
   ],
 
@@ -91,7 +84,6 @@ export const portfolioData: Portfolio = {
 
   contact: {
     phone: "+46 76-057 73 36",
-    location: "Stockholm, Sweden",
     links: {
       linkedin: "https://www.linkedin.com/in/sandy-shohdy-27657a188/",
       github: "https://github.com/Sandy-Shohdy",

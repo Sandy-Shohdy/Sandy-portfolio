@@ -1,0 +1,228 @@
+/* =========================
+   Skills Section
+========================= */
+.skills-section {
+  padding: 100px 20px;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Fluid, gradient-clipped typography for the main heading */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 42px;
+  text-align: center;
+  color: var(--text-h);
+}
+
+/* =========================
+   Skills Content
+========================= */
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Clean, modern category headers */
+.skills-category-title {
+  font-size: 28px;
+  color: var(--text-h);
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+/* Creative underline for category titles */
+.skills-category-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.skills-group:hover .skills-category-title::after {
+  width: 100px;
+}
+
+/* =========================
+   Technical Skills
+========================= */
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Card-style wrapping for each technical category */
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-border);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skill-category h4 {
+  font-size: 15px;
+  color: var(--accent);
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  background: transparent;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  border-radius: 8px; 
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 16px var(--accent-bg);
+}
+
+/* =========================
+   Soft Skills
+========================= */
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+
+.soft-skill-tag {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--code-bg);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.soft-skill-tag::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  margin-right: 16px;
+  box-shadow: 0 0 0 0 var(--accent-bg);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.soft-skill-tag:hover {
+  background: var(--bg);
+  border-left-color: var(--accent);
+  border-top-color: var(--accent-border);
+  border-right-color: var(--accent-border);
+  border-bottom-color: var(--accent-border);
+  transform: translateX(8px);
+  box-shadow: 0 4px 20px var(--accent-bg);
+}
+
+/* Pulsating effect on hover */
+.soft-skill-tag:hover::before {
+  box-shadow: 0 0 0 6px var(--accent-bg);
+  transform: scale(1.2);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 70px 20px;
+  }
+
+  .skills-content {
+    gap: 56px;
+  }
+
+  .skills-category-title {
+    font-size: 24px;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-category {
+    padding: 24px;
+  }
+
+  .soft-skills {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .soft-skill-tag {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .skill-tag {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}

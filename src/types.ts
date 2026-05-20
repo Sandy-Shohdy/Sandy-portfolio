@@ -26,7 +26,6 @@ interface SoftSkill {
 }
 interface Contact {
     phone: string
-    location: string
      links: {
         linkedin: string
         github: string
