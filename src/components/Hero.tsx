@@ -23,17 +23,7 @@ export default function Hero({ person }: HeroProps) {
                 <p className="subtitle">{person.title}</p>
                 {person.bio && <p className="bio">{person.bio}</p>}
 
-                <div className="contact-info">
-                    <div className="info-item">📍 {person.location}</div>
-                    <div className="info-item">✉️ {person.email}</div>
-                    <div className="info-item">📱 {person.phone}</div>
-                </div>
-
-                <div className="social-links">
-                    <a href={person.links.github} target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
-                    <a href={person.links.linkedin} target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
-                    <a href={`mailto:${person.email}`} className="btn btn-primary">Email</a>
-                </div>
+        
             </div>
         </section>
     );

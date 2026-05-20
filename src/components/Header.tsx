@@ -1,17 +1,7 @@
-import { useState } from 'react'
 import './Header.css'
 
 export default function Header() {
-    const [isDarkMode, setIsDarkMode] = useState(false)
-
-    const handleThemeToggle = () => {
-        setIsDarkMode(!isDarkMode)
-        if (!isDarkMode) {
-            document.documentElement.style.colorScheme = 'dark'
-        } else {
-            document.documentElement.style.colorScheme = 'light'
-        }
-    }
+    
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId)
@@ -20,7 +10,7 @@ export default function Header() {
 
     return (
         /* Dynamically add 'dark-theme' class based on local state */
-        <header className={`header ${isDarkMode ? 'dark-theme' : ''}`}>
+        <header className={`header`}>
             <div className="header-container">
                 {/* Logo */}
                 <div className="logo">
@@ -76,14 +66,7 @@ export default function Header() {
                     </a>
                 </nav>
 
-                {/* Dark Mode Toggle */}
-                <button 
-                    className="theme-toggle"
-                    onClick={handleThemeToggle}
-                    aria-label="Toggle dark mode"
-                >
-                    {isDarkMode ? '☀️' : '🌙'}
-                </button>
+                
             </div>
         </header>
     )

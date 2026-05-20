@@ -3,87 +3,66 @@ import type { Portfolio } from './types'
 export const portfolioData: Portfolio = {
   person: {
     name: "Sandy Shohdy",
-    email: "sandyezzat70@gmail.com",
-    phone: "+46 76-057 73 36",
-    location: "Stockholm, Sweden",
     title: "Frontend Developer",
-    bio: "Frontend Developer with a professional background as a Software Quality Engineer. I bridge the gap between technical reliability and user centered design.",
-    photo: "/src/assets/Sandy.jpeg",
-    links: {
-      linkedin: "https://www.linkedin.com/in/sandy-shohdy-27657a188/",
-      github: "https://github.com/Sandy-Shohdy"
-    }
+    bio: "Hi! I am Sandy, a Frontend Developer based in Stockholm. I build web applications that are clean, accessible, and intuitive to use, with a strong focus on creating seamless user experiences.",
+    photo: "/src/assets/Sandy.jpeg"
   },
-
-  education: [
-    {
-      institution: "Hyper Island",
-      degree: "Frontend Development Diploma",
-      startDate: "2025-08",
-      endDate: "2027-04"
-    },
-    {
-      institution: "6 October University",
-      degree: "Master Degree in Mechatronics Engineering",
-      startDate: "2015-10",
-      endDate: "2020-06"
-    }
-  ],
-
-  experience: [
-    {
-      company: "New Era Technology",
-      position: "Software Quality Engineer",
-      location: "Dubai, UAE",
-      startDate: "2021-08",
-      endDate: "2024-10",
-      description: "Performed ETL, functional, smoke, and regression testing across multiple systems. Validated data accuracy and business rules during data transformations. Prepared QA environments, test data, and managed defect tracking to ensure stable releases.",
-      achievements: [
-        "Delivered three major projects with high client satisfaction",
-        "Improved QA processes, reducing post-release defects",
-        "Reduced external reporting issues by 80%"
-      ]
-    }
-  ],
 
   projects: [
     {
       name: "Next-Stop",
-      description: "add new step for your travel plan",
-      technologies: ["React", "JavaScript", "API"],
+      description: "A travel planning application that allows users to create personalized itineraries by adding new destinations, editing existing plans, and deleting locations as needed. All trip data is stored persistently, enabling users to manage and update their travel plans seamlessly across sessions.",
+      technologies: ["React", "JavaScript", "API", "node.js", "React Router", "Vite"],
       githubLink: "https://github.com/Sandy-Shohdy/Next-Stop",
       liveLink: "https://next-stop-ashy.vercel.app/",
       thumbnail: "/src/assets/NextStop.jpeg"
     },
     {
       name: "Popcorn-Pulse",
-      description: "A movie discovery platform",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      description: "A movie discovery platform built to explore the differences between Client-Side Rendering (CSR) and Server-Side Rendering (SSR). Users can browse and search for movies through an external API, while comparing how each rendering approach impacts performance, SEO, and user experience.",
+      technologies: ["HTML5", "CSS", "JavaScript"],
       githubLink: "https://github.com/Sandy-Shohdy/Popcorn-Pulse",
       liveLink: "https://sandy-shohdy.github.io/Popcorn-Pulse/index.html",
-      thumbnail: "/src/assets/PopcornPulse.jpeg"
+      thumbnail: "/src/assets/Popcorn-Pulse.jpeg"
     },
     {
       name: "Hej Fika",
-      description: "A cozy café website",
-      technologies: ["HTML", "CSS", "JavaScript","Figma"],
-      githubLink: "https://github.com/Sandy-Shohdy/Coffee-shops",
+      description: "A cozy café website designed to provide users with a warm and inviting online experience. The site features soft colors, charming typography, and delightful imagery that capture the atmosphere of a welcoming café. Users can explore the menu, learn the café's story, and find location and opening hours information. Built with a strong focus on user experience, the website is fully responsive and mobile-friendly, ensuring seamless navigation and accessibility across all devices.",
+      technologies: ["HTML5", "CSS", "JavaScript", "Figma"],
+      githubLink: "https://github.com/Sandy-Shohdy/Coffee-shop",
       liveLink: "https://sandy-shohdy.github.io/Coffee-shop/index.html",
+      thumbnail: "src/assets/HejFika.svg"
     },
-
     {
-      name: "Zoomzy",
-      description: "A photos Hub",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      name: "ZoomZy",
+      description: "A modern and responsive landing page that displays photo collections fetched from an API. Implemented user authentication with login functionality and designed a clean, mobile-friendly interface optimized for all screen sizes.",
+      technologies: ["HTML5", "CSS", "JavaScript"],
       githubLink: "https://github.com/Sandy-Shohdy/ZoomZy-1",
       liveLink: "https://sandy-shohdy.github.io/ZoomZy-1/login.html",
+      thumbnail: "src/assets/ZoomZy.jpeg"
+    },
+    {
+      name: "One Basket",
+      description: "A modern and responsive landing page that displays photo collections fetched from an API. Implemented user authentication with login functionality and designed a clean, mobile-friendly interface optimized for all screen sizes.",
+      technologies: ["React", "TypeScript", "CSS Tailwind", "Next.js", "Vite", "PWA"],
+      githubLink: "non",
+      liveLink: "on deployment",
+      thumbnail: "src/assets/OneBasket.svg"
+    },
+    {
+      name: "Sandy's Portfolio",
+      description: "A modern portfolio website showcasing my frontend development expertise. Built with React and TypeScript, it features a clean, responsive design with sticky navigation, dark/light mode support, interactive project modals, and smooth animations. Demonstrates best practices in component architecture, accessibility, and user experience design.",
+      technologies: ["React", "TypeScript", "CSS", "Vite"],
+      githubLink: "https://github.com/Sandy-Shohdy/Sandy-portfolio",
+      liveLink: "https://sandy-shohdy.github.io/Sandy-portfolio/",
+      thumbnail: "src/assets/Sandy's Portfolio.jpeg"
     }
   ],
 
   technicalSkills: [
     {
       category: "Languages",
-      skills: ["JavaScript", "TypeScript", "HTML", "CSS",'Storybook']
+      skills: ["JavaScript", "TypeScript", "HTML", "CSS", "Storybook"]
     },
     {
       category: "Frontend",
@@ -99,7 +78,7 @@ export const portfolioData: Portfolio = {
     },
     {
       category: "AI",
-      skills: ["Claude", "ChatGPT", "Curser","Copilot"]
+      skills: ["Claude", "ChatGPT", "Cursor", "Copilot"]
     }
   ],
 
@@ -110,10 +89,13 @@ export const portfolioData: Portfolio = {
     { skill: "Agile Collaboration" }
   ],
 
-  interests: [
-    "Music",
-    "Social Media",
-    "Badminton",
-    "Fashion"
-  ]
+  contact: {
+    phone: "+46 76-057 73 36",
+    location: "Stockholm, Sweden",
+    links: {
+      linkedin: "https://www.linkedin.com/in/sandy-shohdy-27657a188/",
+      github: "https://github.com/Sandy-Shohdy",
+      email: "sandyezzat70@gmail.com"
+    }
+  }
 }

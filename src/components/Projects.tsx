@@ -12,49 +12,51 @@ export default function ProjectsSection({ projects }: ProjectsProps) {
             <div className="projects-grid">
                 {projects.map((project) => (
                     <div key={project.name} className="project-card">
-                        <div className="project-header">
-                            <h3>{project.name}</h3>
-                        </div>
+                        
+                        {project.thumbnail && (
+                            <div className="project-image-wrapper">
+                                <img 
+                                    src={project.thumbnail} 
+                                    alt={project.name}
+                                    className="project-image"
+                                />
+                            </div>
+                        )}
 
-                        <p className="project-description">{project.description}</p>
+                        <div className="project-info">
+                            <div className="project-header">
+                                <h3>{project.name}</h3>
+                            </div>
 
-                        {project.technologies.length > 0 && (
-                            <div className="technologies">
-                                <h4>Technologies:</h4>
-                                <div className="tech-tags">
-                                    {project.technologies.map((tech) => (
-                                        <span key={tech} className="tech-tag">
-                                            {tech}
-                                        </span>
-                                    ))}
+                            <p className="project-description">{project.description}</p>
+
+                            <div className="project-footer">
+                                {project.technologies.length > 0 && (
+                                    <div className="technologies">
+                                        <div className="tech-tags">
+                                            {project.technologies.map((tech) => (
+                                                <span key={tech} className="tech-tag">
+                                                    {tech}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                <div className="card-links">
+                                    {project.liveLink && (
+                                        <a href={project.liveLink} target="_blank" rel="noreferrer" className="card-btn card-btn-primary">
+                                            Live 
+                                        </a>
+                                    )}
+                                    {project.githubLink && (
+                                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="card-btn">
+                                            GitHub
+                                        </a>
+                                    )}
                                 </div>
                             </div>
-                        )}
-
-                        {(project.githubLink || project.liveLink) && (
-                            <div className="project-links">
-                                {project.githubLink && (
-                                    <a 
-                                        href={project.githubLink} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="btn btn-secondary"
-                                    >
-                                        GitHub
-                                    </a>
-                                )}
-                                {project.liveLink && (
-                                    <a 
-                                        href={project.liveLink} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className="btn btn-primary"
-                                    >
-                                        Live Demo
-                                    </a>
-                                )}
-                            </div>
-                        )}
+                        </div>
                     </div>
                 ))}
             </div>

@@ -1,0 +1,119 @@
+:root {
+  /* ============================================
+     CREATIVE LIGHT THEME - Purple & Cyan Fusion
+     ============================================ */
+
+  /* Background: Soft gradient base */
+  --bg: #f8f6ff;
+
+  /* Text colors */
+  --text: #6366f1;
+  --text-h: #4f46e5;
+
+  /* Primary Accent: Vibrant Purple */
+  --accent: #7c3aed;
+  --accent-bg: #f3e8ff;
+  --accent-border: #e9d5ff;
+
+  /* Secondary Accent: Bright Cyan */
+  --secondary: #06b6d4;
+  --secondary-bg: #ecfdf5;
+  --secondary-border: #ccfbf1;
+
+  /* Tertiary: Pink accent for highlights */
+  --tertiary: #ec4899;
+  --tertiary-bg: #fce7f3;
+
+  /* Neutral colors */
+  --border: #e0c3fc;
+  --card-bg: #ffffff;
+  --card-border: #f3e8ff;
+
+  /* Effects */
+  --shadow: 0 20px 40px rgba(124, 58, 237, 0.12);
+  --shadow-sm: 0 4px 12px rgba(124, 58, 237, 0.08);
+
+  /* Gradients */
+  --gradient: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+  --gradient-2: linear-gradient(135deg, #ec4899 0%, #7c3aed 100%);
+  --gradient-3: linear-gradient(180deg, #f8f6ff 0%, #f3e8ff 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ============================================
+       CREATIVE DARK THEME - Deep Space & Vibrant Neon
+       ============================================ */
+
+    /* Background: Ultra-deep navy-purple gradient */
+    --bg: #0a0620;
+
+    /* Text colors - Bright and readable */
+    --text: #d8c9ff;
+    --text-h: #f0e6ff;
+
+    /* Primary Accent: Vibrant Neon Purple */
+    --accent: #bb86fc;
+    --accent-bg: rgba(187, 134, 252, 0.15);
+    --accent-border: rgba(187, 134, 252, 0.35);
+
+    /* Secondary Accent: Bright Electric Cyan */
+    --secondary: #00f0ff;
+    --secondary-bg: rgba(0, 240, 255, 0.1);
+    --secondary-border: rgba(0, 240, 255, 0.25);
+
+    /* Tertiary: Hot Neon Pink */
+    --tertiary: #ff006e;
+    --tertiary-bg: rgba(255, 0, 110, 0.1);
+
+    /* Neutral colors - Deep and refined */
+    --border: #2a1d4a;
+    --card-bg: #130f2b;
+    --card-border: #3a2d5f;
+
+    /* Effects - Stronger, more dramatic */
+    --shadow: 0 20px 40px rgba(187, 134, 252, 0.15);
+    --shadow-sm: 0 4px 12px rgba(187, 134, 252, 0.1);
+
+    /* Gradients - More vibrant and eye-catching */
+    --gradient: linear-gradient(135deg, #bb86fc 0%, #00f0ff 100%);
+    --gradient-2: linear-gradient(135deg, #ff006e 0%, #bb86fc 100%);
+    --gradient-3: linear-gradient(180deg, #0a0620 0%, #130f2b 100%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: var(--bg);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--bg);
+}
