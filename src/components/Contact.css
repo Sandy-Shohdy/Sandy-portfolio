@@ -199,32 +199,7 @@
   transform: translateY(-2px);
 }
 
-/* =========================
-   Decorative Elements
-========================= */
-.contact-decoration {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.05;
-  z-index: 1;
-  pointer-events: none;
-}
 
-.decoration-1 {
-  width: 400px;
-  height: 400px;
-  top: -100px;
-  right: -100px;
-  background: var(--accent);
-}
-
-.decoration-2 {
-  width: 300px;
-  height: 300px;
-  bottom: -50px;
-  left: -50px;
-  background: var(--accent);
-}
 
 /* =========================
    Animations

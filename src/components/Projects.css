@@ -6,6 +6,7 @@
   max-width: 100%;
   margin: 60px auto;
   padding: 40px 20px;
+  position: relative;
 }
 
 .projects-section h2 {
@@ -35,10 +36,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: var(--bg);
+  background: rgb(242 228 252 / 40%);
   border: 1px solid var(--border);
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #27215b;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -47,7 +48,7 @@
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px #1f1a50;
   border-color: var(--accent);
 }
 
@@ -61,7 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--code-bg);
+  background: white;
 }
 
 .project-image-wrapper {

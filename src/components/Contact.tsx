@@ -1,4 +1,5 @@
 import type { Portfolio } from "../types";
+import DecorativeBackground from "./Decorativebackground";
 import "./Contact.css";
 
 interface ContactProps {
@@ -42,6 +43,7 @@ export default function ContactSection({ portfolioData }: ContactProps) {
 
   return (
     <section className="contact-section" id="contact">
+      <DecorativeBackground variant="inverted" />
       <div className="contact-container">
         <div className="contact-header">
           <h2>Get In Touch</h2>
@@ -81,10 +83,6 @@ export default function ContactSection({ portfolioData }: ContactProps) {
           </div>
         </div>
       </div>
-
-      {/* Decorative elements */}
-      <div className="contact-decoration decoration-1"></div>
-      <div className="contact-decoration decoration-2"></div>
     </section>
   );
 }

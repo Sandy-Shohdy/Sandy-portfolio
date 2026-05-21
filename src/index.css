@@ -117,3 +117,57 @@ body {
   min-height: 100vh;
   background: var(--bg);
 }
+
+/* =========================
+   Decorative Background Styles
+========================= */
+.decorative-bg {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Variant: Default */
+.decoration-1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+  background: var(--accent);
+}
+
+.decoration-2 {
+  width: 300px;
+  height: 300px;
+  bottom: -50px;
+  left: -50px;
+  background: var(--accent);
+}
+
+/* Variant: Inverted */
+.decoration-3 {
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 10px;
+  background: var(--accent);
+}
+
+.decoration-4 {
+  width: 350px;
+  height: 350px;
+  bottom: 70%;
+  right: 9px;
+  background: var(--accent);
+}
+
+/* Variant: Minimal */
+.decoration-5 {
+  width: 250px;
+  height: 250px;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+}

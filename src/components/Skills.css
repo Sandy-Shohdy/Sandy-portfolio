@@ -15,7 +15,6 @@
   z-index: 2;
 }
 
-/* Fluid, gradient-clipped typography for the main heading */
 .skills-section h2 {
   margin-bottom: 40px;
   font-size: 42px;
@@ -38,7 +37,6 @@
   gap: 32px;
 }
 
-/* Clean, modern category headers */
 .skills-category-title {
   font-size: 28px;
   color: var(--text-h);
@@ -48,7 +46,6 @@
   position: relative;
 }
 
-/* Creative underline for category titles */
 .skills-category-title::after {
   content: "";
   position: absolute;
@@ -74,14 +71,14 @@
   gap: 24px;
 }
 
-/* Card-style wrapping for each technical category */
 .skill-category {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: var(--code-bg);
+  background: rgb(242 228 252 / 40%);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px #27215b;
   padding: 32px;
   transition:
     transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
@@ -91,8 +88,8 @@
 
 .skill-category:hover {
   transform: translateY(-6px);
-  border-color: var(--accent-border);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px #1f1a50;
 }
 
 .skill-category h4 {
@@ -116,7 +113,7 @@
   background: transparent;
   color: var(--text-h);
   border: 1px solid var(--border);
-  border-radius: 8px; 
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -140,16 +137,16 @@
   gap: 16px;
 }
 
-
 .soft-skill-tag {
   display: flex;
   align-items: center;
   padding: 16px 24px;
-  background: var(--code-bg);
+  background: rgb(242 228 252 / 40%);
   color: var(--text-h);
   border: 1px solid var(--border);
   border-left: 4px solid var(--border);
   border-radius: 12px;
+  box-shadow: 0 4px 6px #27215b;
   font-size: 15px;
   font-weight: 600;
   transition: all 0.3s ease;
