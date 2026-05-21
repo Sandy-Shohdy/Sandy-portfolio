@@ -5,7 +5,7 @@ export const portfolioData: Portfolio = {
     name: "Sandy Shohdy",
     title: "Frontend Developer",
     bio: "Hi! I'm Sandy, a Frontend Developer based in Stockholm with a passion for building clean, accessible, and intuitive web applications. With a background in Software Quality Engineering, I combine technical excellence with user-centered design thinking to create seamless digital experiences. I'm committed to writing maintainable code, ensuring accessibility for everyone, and delivering high-performance solutions that truly matter. When I'm not coding, you'll find me exploring Stockholm's creative scene, staying updated with design trends, or enjoying outdoor activities. Let's create something amazing together!",
-    photo: "/src/assets/Sandy1.jpeg"
+    photo: "/Sandy1.jpeg"
   },
 
   projects: [
@@ -15,7 +15,7 @@ export const portfolioData: Portfolio = {
       technologies: ["React", "JavaScript", "API", "node.js", "React Router", "Vite"],
       githubLink: "https://github.com/Sandy-Shohdy/Next-Stop",
       liveLink: "https://next-stop-ashy.vercel.app/",
-      thumbnail: "/src/assets/NextStop.jpeg"
+      thumbnail: "/NextStop.jpeg"
     },
     {
       name: "Popcorn-Pulse",
@@ -23,7 +23,7 @@ export const portfolioData: Portfolio = {
       technologies: ["HTML5", "CSS", "JavaScript"],
       githubLink: "https://github.com/Sandy-Shohdy/Popcorn-Pulse",
       liveLink: "https://sandy-shohdy.github.io/Popcorn-Pulse/index.html",
-      thumbnail: "/src/assets/Popcorn-Pulse.jpeg"
+      thumbnail: "/Popcorn-Pulse.jpeg"
     },
     {
       name: "Hej Fika",
@@ -31,7 +31,7 @@ export const portfolioData: Portfolio = {
       technologies: ["HTML5", "CSS", "JavaScript", "Figma"],
       githubLink: "https://github.com/Sandy-Shohdy/Coffee-shop",
       liveLink: "https://sandy-shohdy.github.io/Coffee-shop/index.html",
-      thumbnail: "src/assets/HejFika.svg"
+      thumbnail: "/HejFika.svg"
     },
     {
       name: "ZoomZy",
@@ -39,7 +39,7 @@ export const portfolioData: Portfolio = {
       technologies: ["HTML5", "CSS", "JavaScript"],
       githubLink: "https://github.com/Sandy-Shohdy/ZoomZy-1",
       liveLink: "https://sandy-shohdy.github.io/ZoomZy-1/login.html",
-      thumbnail: "src/assets/ZoomZy.jpeg"
+      thumbnail: "/ZoomZy.jpeg"
     },
     {
       name: "One Basket",
@@ -47,7 +47,7 @@ export const portfolioData: Portfolio = {
       technologies: ["React", "TypeScript", "CSS Tailwind", "Next.js", "Vite", "PWA"],
       githubLink: "non",
       liveLink: "on deployment",
-      thumbnail: "src/assets/OneBasket.svg"
+      thumbnail: "/OneBasket.svg"
     },
     {
       name: "Sandy's Portfolio",
@@ -55,7 +55,7 @@ export const portfolioData: Portfolio = {
       technologies: ["React", "TypeScript", "CSS", "Vite"],
       githubLink: "https://github.com/Sandy-Shohdy/Sandy-portfolio",
       liveLink: "https://sandy-shohdy.github.io/Sandy-portfolio/",
-      thumbnail: "src/assets/Sandy's Portfolio.jpeg"
+      thumbnail: "/Sandy's Portfolio.jpeg"
     }
   ],
 
