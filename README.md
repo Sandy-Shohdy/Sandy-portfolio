@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sandy Portfolio
 
-Currently, two official plugins are available:
+A modern, creative, and responsive portfolio website built with React, TypeScript, and Vite. Showcases projects, skills, and contact information with light/dark theme support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+-  Fast and modern build with Vite
+- Light and dark theme toggle
+-  Project cards with images, tech tags, and links
+- Responsive design for all devices
+- Modular React components
+- Customizable color palette
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+```bash
+git clone https://github.com/Sandy-Shohdy/Sandy-portfolio.git
+cd Sandy-portfolio
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Running Locally
+```bash
+npm run dev
 ```
+Visit [http://localhost:5173](http://localhost:5173) to view the site.
+
+### Building for Production
+```bash
+npm run build
+```
+
+## Project Structure
+```
+Sandy-portfolio/
+├── public/           # Static assets
+├── src/
+│   ├── assets/       # Images and media
+│   ├── components/   # React components
+│   ├── App.tsx       # Main app component
+│   ├── data.ts       # Portfolio data
+│   ├── types.ts      # TypeScript types
+│   └── index.css     # Global styles and theme
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## Customization
+- Edit `src/data.ts` to update your projects, skills, and contact info.
+- Change theme colors in `src/index.css`.
+- Update images in `src/assets/` and `public/`.
+
+## License
+MIT
+
+---
+Made with ❤️ by Sandy Shohdy

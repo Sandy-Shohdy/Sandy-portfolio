@@ -48,8 +48,9 @@ export default function ContactSection({ portfolioData }: ContactProps) {
         <div className="contact-header">
           <h2>Get In Touch</h2>
           <p className="contact-subtitle">
-            Let's connect! Whether you have a question or just want to say hi,
-            feel free to reach out.
+            Let’s connect! Whether you have a question, want to collaborate, or
+            just want to say hi, feel free to reach out. Let’s build something
+            awesome together!
           </p>
         </div>
 
