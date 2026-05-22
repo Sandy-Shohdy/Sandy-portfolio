@@ -18,7 +18,7 @@
 .header-container {
   max-width: 1126px;
   margin: 0 auto;
-  padding: 16px 20px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,24 +30,33 @@
 }
 
 .logo-button {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .logo-button:hover {
-  background: var(--accent);
-  color: var(--bg);
-  box-shadow: var(--shadow);
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
+.logo-icon {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-h);
+}
 .nav {
   display: flex;
   gap: 30px;
@@ -58,8 +67,8 @@
 .nav-link {
   color: var(--text);
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -126,6 +135,10 @@
     width: 40px;
     height: 40px;
     font-size: 14px;
+  }
+  .logo-icon {
+    width: 50px;
+    height: 50px;
   }
 }
 

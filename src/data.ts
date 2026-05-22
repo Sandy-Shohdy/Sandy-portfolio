@@ -54,7 +54,7 @@ export const portfolioData: Portfolio = {
       description: "A modern portfolio website showcasing my frontend development expertise. Built with React and TypeScript, it features a clean, responsive design with sticky navigation, dark/light mode support, interactive project modals, and smooth animations. Demonstrates best practices in component architecture, accessibility, and user experience design.",
       technologies: ["React", "TypeScript", "CSS", "Vite"],
       githubLink: "https://github.com/Sandy-Shohdy/Sandy-portfolio",
-      liveLink: "https://sandy-shohdy.github.io/Sandy-portfolio/",
+      liveLink: "https://sandy-portfolio-rho.vercel.app/",
       thumbnail: "/Sandy's Portfolio.jpeg"
     }
   ],
@@ -67,7 +67,7 @@ export const portfolioData: Portfolio = {
     },
     {
       category: "Backend",
-      skills: ["Node.js", "MongoDB", "SQL", "Express.js"]
+      skills: ["Node.js", "MongoDB", "SQL", "Express.js" , "Next.js"]
     },
     {
       category: "Tools & Other",

@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradElegant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a0dc" />
+      <stop offset="100%" stop-color="#8e7c93" />
+    </linearGradient>
+  </defs>
+
+  <rect x="20" y="20" width="160" height="160" rx="80" fill="white" />
+  <rect x="25" y="25" width="150" height="150" rx="75" stroke="url(#gradElegant)" stroke-width="2" fill="none" />
+  <rect x="30" y="30" width="140" height="140" rx="70" stroke="url(#gradElegant)" stroke-width="1" fill="none" opacity="0.5" />
+
+  <text x="65" y="128" font-size="85" font-weight="300" fill="url(#gradElegant)" font-family="Georgia, serif" font-style="italic">S</text>
+
+  <text x="100" y="128" font-size="85" font-weight="300" fill="url(#gradElegant)" font-family="Georgia, serif" font-style="italic">S</text>
+
+  <line x1="100" y1="50" x2="100" y2="60" stroke="url(#gradElegant)" stroke-width="1" />
+  <line x1="100" y1="140" x2="100" y2="150" stroke="url(#gradElegant)" stroke-width="1" />
+</svg>

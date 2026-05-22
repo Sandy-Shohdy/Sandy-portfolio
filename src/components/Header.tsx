@@ -1,73 +1,70 @@
-import './Header.css'
+import "./Header.css";
+import logo from "/SS-elegant-logo.svg";
 
 export default function Header() {
-    
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
 
-    const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId)
-        element?.scrollIntoView({ behavior: 'smooth' })
-    }
+  return (
+    /* Dynamically add 'dark-theme' class based on local state */
+    <header className={`header`}>
+      <div className="header-container">
+        {/* Logo with SVG Icon */}
+        <div className="logo">
+          <button
+            className="logo-button"
+            onClick={() => scrollToSection("home")}
+          >
+            <img src={logo} alt="Sandy's Logo" className="logo-icon" />
+          </button>
+        </div>
 
-    return (
-        /* Dynamically add 'dark-theme' class based on local state */
-        <header className={`header`}>
-            <div className="header-container">
-                {/* Logo */}
-                <div className="logo">
-                    <button 
-                        className="logo-button"
-                        onClick={() => scrollToSection('home')}
-                    >
-                        SS
-                    </button>
-                </div>
-
-                {/* Navigation Links (Now aligned right via updated CSS) */}
-                <nav className="nav">
-                    <a 
-                        href="#home"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            scrollToSection('home')
-                        }}
-                        className="nav-link"
-                    >
-                        Home
-                    </a>
-                    <a 
-    href="#projects"
-    onClick={(e) => {
-        e.preventDefault()
-        scrollToSection('projects')
-    }}
-    className="nav-link"
->
-    Projects
-</a>
-                    <a 
-                        href="#skills"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            scrollToSection('skills')
-                        }}
-                        className="nav-link"
-                    >
-                        Skills
-                    </a>
-                    <a 
-                        href="#contact"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            scrollToSection('contact')
-                        }}
-                        className="nav-link"
-                    >
-                        Contact
-                    </a>
-                </nav>
-
-                
-            </div>
-        </header>
-    )
+        {/* Navigation Links (Now aligned right via updated CSS) */}
+        <nav className="nav">
+          <a
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("home");
+            }}
+            className="nav-link"
+          >
+            Home
+          </a>
+          <a
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("projects");
+            }}
+            className="nav-link"
+          >
+            Projects
+          </a>
+          <a
+            href="#skills"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("skills");
+            }}
+            className="nav-link"
+          >
+            Skills
+          </a>
+          <a
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("contact");
+            }}
+            className="nav-link"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
 }
