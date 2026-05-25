@@ -41,9 +41,9 @@
 }
 
 .subtitle {
-  font-size: 24px;
-  color: #2a06d4;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  color: rgb(93, 78, 169);
+  text-shadow: 2px rgb(236, 234, 242);
   margin-bottom: 20px;
   font-weight: 500;
 }
