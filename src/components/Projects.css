@@ -196,6 +196,17 @@
   box-shadow: 0 4px 12px rgba(170, 59, 255, 0.4);
 }
 
+.card-btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.card-btn-disabled:hover {
+  opacity: 0.5;
+  transform: none;
+  box-shadow: none;
+}
 /* =========================
    Responsive
 ========================= */

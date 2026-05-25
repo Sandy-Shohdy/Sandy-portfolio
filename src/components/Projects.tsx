@@ -46,7 +46,7 @@ export default function ProjectsSection({ projects }: ProjectsProps) {
                 )}
 
                 <div className="card-links">
-                  {project.liveLink && (
+                  {project.liveLink && project.liveLink !== "on deployment" && (
                     <a
                       href={project.liveLink}
                       target="_blank"
@@ -56,7 +56,15 @@ export default function ProjectsSection({ projects }: ProjectsProps) {
                       Live
                     </a>
                   )}
-                  {project.githubLink && (
+                  {project.liveLink === "on deployment" && (
+                    <button
+                      className="card-btn card-btn-primary card-btn-disabled"
+                      disabled
+                    >
+                      Live
+                    </button>
+                  )}
+                  {project.githubLink && project.githubLink !== "non" && (
                     <a
                       href={project.githubLink}
                       target="_blank"
