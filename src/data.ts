@@ -44,13 +44,21 @@ export const portfolioData: Portfolio = {
       thumbnail: "/HejFika.svg",
     },
     {
-      name: "ZoomZy",
+      name: "DeepFlow",
       description:
-        "A modern and responsive landing page that displays photo collections fetched from an API. Implemented user authentication with login functionality and designed a clean, mobile-friendly interface optimized for all screen sizes.",
-      technologies: ["HTML5", "CSS", "JavaScript"],
-      githubLink: "https://github.com/Sandy-Shohdy/ZoomZy-1",
-      liveLink: "https://sandy-shohdy.github.io/ZoomZy-1/login.html",
-      thumbnail: "/ZoomZy.jpeg",
+        "An immersive 3D underwater meditation experience built with A-Frame and Three.js. Features interactive marine life, proximity-based interactions, and XR-friendly design. Implemented custom A-Frame components for swimming AI, glowing visual effects, and accessibility across desktop, mobile, and VR devices. Demonstrates WebXR integration, real-time 3D graphics optimization, and user-centered design for immersive web experiences.",
+      technologies: [
+        "A-Frame",
+        "Three.js",
+        "JavaScript",
+        "WebXR",
+        "WebGL",
+        "HTML5",
+        "CSS3",
+      ],
+      githubLink: "https://github.com/Anna-Monika-Sandy/DeepFlow",
+      liveLink: "https://deep-flow-mu.vercel.app/",
+      thumbnail: "/DeepFlow.jpeg",
     },
     {
       name: "One Basket",
