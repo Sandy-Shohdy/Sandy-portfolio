@@ -46,7 +46,7 @@ export const portfolioData: Portfolio = {
     {
       name: "DeepFlow",
       description:
-        "An immersive 3D underwater meditation experience built with A-Frame and Three.js. Features interactive marine life, proximity-based interactions, and XR-friendly design. Implemented custom A-Frame components for swimming AI, glowing visual effects, and accessibility across desktop, mobile, and VR devices. Demonstrates WebXR integration, real-time 3D graphics optimization, and user-centered design for immersive web experiences.",
+        "An immersive 3D underwater meditation experience built with A-Frame and Three.js. Features interactive marine life, proximity-based interactions, and XR-friendly design with glowing visual effects and accessibility across desktop, mobile, and VR devices. Demonstrates WebXR integration, real time 3D graphics optimization, and user centered design for immersive web experiences.",
       technologies: [
         "A-Frame",
         "Three.js",
