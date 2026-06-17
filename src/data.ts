@@ -22,8 +22,7 @@ export const portfolioData: Portfolio = {
         "Vite",
       ],
       githubLink: "https://github.com/Sandy-Shohdy/Next-Stop",
-      liveLink:
-        "https://next-stop-8utb2j3ln-sandyezzat70-6640s-projects.vercel.app/",
+      liveLink: "https://next-stop-ashy.vercel.app/",
       thumbnail: "/NextStop.jpeg",
     },
     {
