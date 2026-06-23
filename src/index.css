@@ -54,7 +54,7 @@
 
     /* Primary Accent: Vibrant Neon Purple */
     --accent: #bb86fc;
-    --accent-bg: rgba(187, 134, 252, 0.15);
+    --accent-bg: rgba(0, 0, 0, 0.644);
     --accent-border: rgba(187, 134, 252, 0.35);
 
     /* Secondary Accent: Bright Electric Cyan */
